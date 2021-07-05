@@ -83,10 +83,10 @@ function draw() {
     score = score + Math.round(getFrameRate()/60);
     
   
-    if(keyDown("space") && trex.y >= 159) {
+    if(keyDown("space")) {
       console.log('hi')
       jumpSound.play();
-      trex.velocityY = -14;
+      trex.velocityY = -5;
     }
   
     trex.velocityY = trex.velocityY + 0.8
@@ -229,3 +229,8 @@ function reset(){
   score = 0;
   
 }
+
+
+
+//camera.position.x=trex.x
+//trex.x=
